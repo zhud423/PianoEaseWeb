@@ -1,0 +1,29 @@
+{
+  "version": "v0",
+  "songs": [
+    {
+      "id": "friendship-years",
+      "title": "友情岁月",
+      "subtitle": "Young and Dangerous",
+      "bpm": 74,
+      "durationLabel": "02:15",
+      "level": "入门"
+    },
+    {
+      "id": "city-in-the-sky",
+      "title": "天空之城",
+      "subtitle": "Castle in the Sky",
+      "bpm": 82,
+      "durationLabel": "02:48",
+      "level": "进阶"
+    },
+    {
+      "id": "river-flows",
+      "title": "River Flows in You",
+      "subtitle": "Yiruma",
+      "bpm": 95,
+      "durationLabel": "03:10",
+      "level": "挑战"
+    }
+  ]
+}

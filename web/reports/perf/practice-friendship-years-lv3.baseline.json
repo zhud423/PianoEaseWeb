@@ -1,0 +1,68 @@
+{
+  "generatedAt": "2026-03-30T05:25:05.200Z",
+  "config": {
+    "songId": "friendship-years",
+    "variantId": "lv3",
+    "iterations": 32,
+    "frames": 2200,
+    "strict": true,
+    "outputPath": "/Users/dong/Documents/PianoEase/web/reports/perf/practice-friendship-years-lv3.baseline.json"
+  },
+  "chart": {
+    "songId": "friendship-years",
+    "variantId": "lv3",
+    "measureCount": 2,
+    "noteEventCount": 24,
+    "requiredNoteCount": 24,
+    "bpm": 74,
+    "ppq": 480
+  },
+  "metrics": {
+    "renderMsPerFrame": {
+      "min": 0.0006400154545454484,
+      "max": 0.002827270909090913,
+      "avg": 0.000864792911931818,
+      "p50": 0.000779643181818182,
+      "p95": 0.0011575622727272616,
+      "p99": 0.001270283636363636
+    },
+    "judgeMsPerNote": {
+      "min": 0.0016021666666669414,
+      "max": 0.018318500000000643,
+      "avg": 0.0028552122395830346,
+      "p50": 0.00211520833333149,
+      "p95": 0.00551091666666655,
+      "p99": 0.005538416666665806
+    },
+    "hitRatePct": {
+      "min": 54.166666666666664,
+      "max": 91.66666666666666,
+      "avg": 70.18229166666666,
+      "p50": 66.66666666666666,
+      "p95": 83.33333333333334,
+      "p99": 83.33333333333334
+    },
+    "wrongRatePct": {
+      "min": 8.333333333333332,
+      "max": 45.83333333333333,
+      "avg": 29.81770833333333,
+      "p50": 33.33333333333333,
+      "p95": 41.66666666666667,
+      "p99": 41.66666666666667
+    },
+    "missRatePct": {
+      "min": 8.333333333333332,
+      "max": 45.83333333333333,
+      "avg": 29.81770833333333,
+      "p50": 33.33333333333333,
+      "p95": 41.66666666666667,
+      "p99": 41.66666666666667
+    }
+  },
+  "thresholds": {
+    "renderP95MsPerFrameMax": 1.2,
+    "judgeP95MsPerNoteMax": 0.45
+  },
+  "pass": true,
+  "checksum": 10395620
+}

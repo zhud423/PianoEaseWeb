@@ -1,0 +1,43 @@
+{
+  "name": "web",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev --webpack",
+    "build": "next build --webpack",
+    "start": "next start",
+    "lint": "eslint",
+    "test:core": "node --test --import tsx tests/**/*.test.ts",
+    "verify": "corepack pnpm lint && corepack pnpm test:core && corepack pnpm check:practice && corepack pnpm chart:check && corepack pnpm build",
+    "verify:strict": "corepack pnpm verify && corepack pnpm perf:practice -- --strict",
+    "db:generate": "drizzle-kit generate",
+    "db:migrate": "tsx --tsconfig tsconfig.json src/db/migrate.ts",
+    "db:seed": "tsx --tsconfig tsconfig.json src/db/seed.ts",
+    "db:studio": "drizzle-kit studio",
+    "chart:check": "node --import tsx scripts/check-charts.ts",
+    "chart:generate": "node --import tsx scripts/generate-charts.ts",
+    "perf:practice": "node --import tsx scripts/benchmark-practice.ts",
+    "check:practice": "node --import tsx scripts/check-practice-logic.ts"
+  },
+  "dependencies": {
+    "@electric-sql/pglite": "^0.4.2",
+    "drizzle-orm": "^0.45.1",
+    "next": "16.2.1",
+    "opensheetmusicdisplay": "^1.9.7",
+    "postgres": "^3.4.8",
+    "react": "19.2.4",
+    "react-dom": "19.2.4"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "^4",
+    "@types/node": "^20",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "drizzle-kit": "^0.31.10",
+    "eslint": "^9",
+    "eslint-config-next": "16.2.1",
+    "tailwindcss": "^4",
+    "tsx": "^4.21.0",
+    "typescript": "^5"
+  }
+}
